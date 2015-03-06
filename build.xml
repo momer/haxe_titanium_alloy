@@ -18,6 +18,7 @@
 	<class name="(titanium.ui.view|alloy.Controller)" ignore="true" />
 
 	<type name="Dictionary" generic="true" remap="Dynamic" />
+	<type name="AlloyStyleDict" remap="Dynamic" />
 
 	<type name="Callback/Array<String>" remap="Dynamic" />
 	<type name="Titanium.UI.Animation/Dictionary<Animation>" remap="Dynamic" />
