@@ -29,6 +29,8 @@
 	<type name="Array<Number>" remap="Array<Float>" />
 	<type name="Array<Object>" remap="Array<Dynamic>" />
 	<type name="Callback" remap="Callback<Dynamic>" />
+	<type name="Function()" remap="Dynamic" />
+	<type name="Function" remap="Dynamic" />
 
 	<output path="extern_classes" />
 </buildhx>

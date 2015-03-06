@@ -2,7 +2,7 @@ package alloy;
 
 
 @:native("Alloy.Controller")
-extern class Controller extends Events
+extern class Controller
 {	
 	public static function addClass(proxy:Dynamic, classes:Dynamic, ?opts:Dynamic):Void;
 	
