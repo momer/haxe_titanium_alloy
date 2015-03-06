@@ -2,3 +2,4 @@
 -cp ./test
 -js ./TestFile.js
 -lib titanium_mobile_externs
+-lib titanium_alloy_externs
