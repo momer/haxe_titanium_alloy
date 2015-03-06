@@ -1,0 +1,317 @@
+{
+  "tagname": "class",
+  "name": "Alloy.builtins.social",
+  "doc": "<p>A collection of useful social media provider utilities. Currently, this module only supports\nTwitter and the following features:</p>\n\n<ul>\n<li>Logging into Twitter and authorizing the application through the OAuth protocol.</li>\n<li>Posting tweets to the user's Twitter account.</li>\n</ul>\n\n\n<p>To use the social builtin library, require it with the <code>alloy</code> root\ndirectory in your <code>require</code> call. For example:</p>\n\n<pre><code>var social = require('alloy/social').create({\n    consumerSecret: 'consumer-secret',\n    consumerKey: 'consumer-key'\n});\n</code></pre>\n\n<h2>Login and Authorization</h2>\n\n<p>To use a social media provider, a user must log in and authorize the application to perform\ncertain actions, such as accessing profile information or posting messages.</p>\n\n<p>Call <code>authorize</code> to prompt the user to login and authorize the application.  For Twitter, a\ndialog box will appear asking the user for their permission and login credentials.</p>\n\n<p>Before calling <code>authorize</code>, the application will need a consumer key and secret provided by the\nsocial media service provider for the OAuth protocol, used when calling <code>create</code>.\nFor Twitter, these are provided when registering an application:\n<a href=\"https://dev.twitter.com/apps/new\">https://dev.twitter.com/apps/new</a></p>\n\n<h2>Example</h2>\n\n<p>This example authorizes the application, posts a message to the user's Twitter account, then\ndeauthorizes the application.</p>\n\n<pre><code>// If not authorized, get authorization from the user\nif(!social.isAuthorized()) {\n    social.authorize();\n}\n\n// Post a message\n // Setup both callbacks for confirmation\n // Note: share() automatically calls authorize() so an explicit call as above is unnecessary\nsocial.share({\n    message: \"Salut, Monde!\",\n    success: function(e) {alert('Success!')},\n    error: function(e) {alert('Error!')}\n});\n\n// Deauthorize the application\nsocial.deauthorize();\n</code></pre>\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "function",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-Alloy.builtins.social",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+      {
+        "tagname": "method",
+        "name": "authorize",
+        "owner": "Alloy.builtins.social",
+        "doc": "<p>Authorizes the client to the service provider to access user data.\nIf successful, the client will receive an access token, which will be saved for future\nusage.\nCall this function after opening the parent view or else the authorize UI window will\nappear in the background behind the view and unusable to the user.</p>\n",
+        "params": [
+          {
+            "type": "Function",
+            "name": "callback",
+            "doc": "<p>Callback function executed after successfully retrieving\nan access token.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Function"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-authorize",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/social.js",
+            "linenr": 597
+          }
+        ],
+        "shortDoc": "Authorizes the client to the service provider to access user data. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "create",
+        "owner": "Alloy.builtins.social",
+        "doc": "<p>Initializes an OAuth session to the service provider.\nIf a previous access token exists, it will be loaded.</p>\n",
+        "params": [
+          {
+            "type": "...*",
+            "name": "settings",
+            "doc": "<p>OAuth session settings.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+              {
+                "tagname": "param",
+                "doc": "<p>Site to access. Only 'twitter' is working.</p>\n",
+                "type": "String",
+                "name": "site",
+                "default": "\"twitter\"",
+                "optional": true,
+                "html_type": "String"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Shared secret used to authenticate the key.</p>\n",
+                "type": "String",
+                "name": "consumerSecret",
+                "html_type": "String"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Key used to identify the client to the service provider.</p>\n",
+                "type": "String",
+                "name": "consumerKey",
+                "html_type": "String"
+              }
+            ],
+            "html_type": "...*"
+          }
+        ],
+        "return": {
+          "type": "Object",
+          "name": "return",
+          "doc": "<p>Instance of social to make subsequent API calls.</p>\n",
+          "properties": null,
+          "html_type": "Object"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-create",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/social.js",
+            "linenr": 566
+          }
+        ],
+        "shortDoc": "Initializes an OAuth session to the service provider. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "deauthorize",
+        "owner": "Alloy.builtins.social",
+        "doc": "<p>Deauthorizes the client and clears the access token.</p>\n",
+        "params": [
+
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-deauthorize",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/social.js",
+            "linenr": 590
+          }
+        ],
+        "shortDoc": "Deauthorizes the client and clears the access token. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "isAuthorized",
+        "owner": "Alloy.builtins.social",
+        "doc": "<p>Returns 'true' if the client is authorized by the service provider.</p>\n",
+        "params": [
+
+        ],
+        "return": {
+          "type": "Boolean",
+          "name": "return",
+          "doc": "<p>Returns 'true' if authorized else 'false'.</p>\n",
+          "properties": null,
+          "html_type": "Boolean"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-isAuthorized",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/social.js",
+            "linenr": 582
+          }
+        ],
+        "shortDoc": "Returns 'true' if the client is authorized by the service provider. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "share",
+        "owner": "Alloy.builtins.social",
+        "doc": "<p>Sends an update to the service provider. Implicitly calls authorize() to authorize your app.</p>\n",
+        "params": [
+          {
+            "type": "...*",
+            "name": "options",
+            "doc": "<p>Update parameters.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+              {
+                "tagname": "param",
+                "doc": "<p>Message to send.</p>\n",
+                "type": "String",
+                "name": "message",
+                "html_type": "String"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Callback function executed after a successful update.</p>\n",
+                "type": "Function",
+                "name": "success",
+                "optional": true,
+                "html_type": "Function"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Callback function executed after a failed update.</p>\n",
+                "type": "Function",
+                "name": "error",
+                "optional": true,
+                "html_type": "Function"
+              }
+            ],
+            "html_type": "...*"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-share",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/social.js",
+            "linenr": 619
+          }
+        ],
+        "shortDoc": "Sends an update to the service provider. ...",
+        "html_meta": {
+        }
+      }
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/Alloy/builtins/social.js",
+      "linenr": 1
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}

@@ -1,0 +1,493 @@
+{
+  "tagname": "class",
+  "name": "Language",
+  "doc": "<hr />\n\n<pre><code>    Constructors\n</code></pre>\n\n<hr />\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "function",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-Language",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+      {
+        "tagname": "property",
+        "name": "",
+        "owner": "Language",
+        "type": "Object",
+        "doc": "<hr />\n\n<pre><code>    Default Lang\n</code></pre>\n\n<hr />\n",
+        "default": null,
+        "properties": [
+
+        ],
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "property-",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 2556
+          }
+        ],
+        "html_type": "Object",
+        "html_meta": {
+        }
+      }
+    ],
+    "method": [
+      {
+        "tagname": "method",
+        "name": "extend",
+        "owner": "Language",
+        "doc": "<hr />\n\n<pre><code>    Helpers\n</code></pre>\n\n<hr />\n",
+        "params": [
+          {
+            "type": "Object",
+            "name": "a",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "b",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-extend",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 411
+          }
+        ],
+        "shortDoc": "Helpers ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "getParseRegexForToken",
+        "owner": "Language",
+        "doc": "<hr />\n\n<pre><code>    Parsing\n</code></pre>\n\n<hr />\n",
+        "params": [
+          {
+            "type": "Object",
+            "name": "token",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "config",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-getParseRegexForToken",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 984
+          }
+        ],
+        "shortDoc": "Parsing ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "makeGlobal",
+        "owner": "Language",
+        "doc": "<hr />\n\n<pre><code>    Exposing Moment\n</code></pre>\n\n<hr />\n",
+        "params": [
+          {
+            "type": "Object",
+            "name": "shouldDeprecate",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-makeGlobal",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 2575
+          }
+        ],
+        "shortDoc": "Exposing Moment ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "makeMoment",
+        "owner": "Language",
+        "doc": "<hr />\n\n<pre><code>    Top Level Functions\n</code></pre>\n\n<hr />\n",
+        "params": [
+          {
+            "type": "Object",
+            "name": "config",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-makeMoment",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 1645
+          }
+        ],
+        "shortDoc": "Top Level Functions ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "removeFormattingTokens",
+        "owner": "Language",
+        "doc": "<hr />\n\n<pre><code>    Formatting\n</code></pre>\n\n<hr />\n",
+        "params": [
+          {
+            "type": "Object",
+            "name": "input",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-removeFormattingTokens",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 918
+          }
+        ],
+        "shortDoc": "Formatting ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "substituteTimeAgo",
+        "owner": "Language",
+        "doc": "<hr />\n\n<pre><code>    Relative Time\n</code></pre>\n\n<hr />\n",
+        "params": [
+          {
+            "type": "Object",
+            "name": "string",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "number",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "withoutSuffix",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "isFuture",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "lang",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-substituteTimeAgo",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 1564
+          }
+        ],
+        "shortDoc": "Relative Time ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "weekOfYear",
+        "owner": "Language",
+        "doc": "<hr />\n\n<pre><code>    Week of Year\n</code></pre>\n\n<hr />\n",
+        "params": [
+          {
+            "type": "Object",
+            "name": "mom",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "firstDayOfWeek",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          },
+          {
+            "type": "Object",
+            "name": "firstDayOfWeekOfYear",
+            "doc": "\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Object"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-weekOfYear",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+            "linenr": 1597
+          }
+        ],
+        "shortDoc": "Week of Year ...",
+        "html_meta": {
+        }
+      }
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/Alloy/builtins/moment.js",
+      "linenr": 363
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}

@@ -1,0 +1,893 @@
+{
+  "tagname": "class",
+  "name": "Alloy.builtins.animation",
+  "doc": "<p>A collection of useful animation utilities. To use the animation builtin library,\nall you need to do is require it with the <code>alloy</code> root directory in your\n<code>require</code> call. For example:</p>\n\n<pre><code>var animation = require('alloy/animation');\nanimation.crossFade(view1, view2, 500, finishCallback);\n</code></pre>\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "nop",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-Alloy.builtins.animation",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+      {
+        "tagname": "property",
+        "name": "HORIZONTAL",
+        "owner": "Alloy.builtins.animation",
+        "type": "String",
+        "doc": "<p>To be used as direction for the flip-method</p>\n",
+        "default": "\"horizontal\"",
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "property-HORIZONTAL",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 11
+          }
+        ],
+        "shortDoc": "To be used as direction for the flip-method ...",
+        "html_type": "String",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "property",
+        "name": "VERTICAL",
+        "owner": "Alloy.builtins.animation",
+        "type": "String",
+        "doc": "<p>To be used as direction for the flip-method</p>\n",
+        "default": "\"vertical\"",
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "property-VERTICAL",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 17
+          }
+        ],
+        "shortDoc": "To be used as direction for the flip-method ...",
+        "html_type": "String",
+        "html_meta": {
+        }
+      }
+    ],
+    "method": [
+      {
+        "tagname": "method",
+        "name": "chainAnimate",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Executes a series of animations on the target view.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "view",
+            "doc": "<p>View to animate.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Titanium.UI.Animation[]",
+            "name": "animations",
+            "doc": "<p>A set of animations to execute on <code>view</code> in sequence.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.Animation[]"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback to invoke once the chain animation is complete.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-chainAnimate",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 296
+          }
+        ],
+        "shortDoc": "Executes a series of animations on the target view. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "crossFade",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Transitions from one view to another using a cross-fade animation.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "from",
+            "doc": "<p>View to fade out.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Titanium.UI.View",
+            "name": "to",
+            "doc": "<p>View to fade in.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "duration",
+            "doc": "<p>Fade duration in milliseconds.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the fade completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-crossFade",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 94
+          }
+        ],
+        "shortDoc": "Transitions from one view to another using a cross-fade animation. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "fadeAndRemove",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Fades out a view then removes it from its parent view.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "from",
+            "doc": "<p>View to remove.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "duration",
+            "doc": "<p>Fade duration in milliseconds.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "Titanium.UI.View",
+            "name": "container",
+            "doc": "<p>Parent container view.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the fadeAndRemove completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-fadeAndRemove",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 117
+          }
+        ],
+        "shortDoc": "Fades out a view then removes it from its parent view. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "fadeIn",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Fades in the specified view.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "to",
+            "doc": "<p>View to fade in.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "duration",
+            "doc": "<p>Fade duration in milliseconds.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the fadeIn completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-fadeIn",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 139
+          }
+        ],
+        "shortDoc": "Fades in the specified view. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "fadeOut",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Fades out the specified view.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "to",
+            "doc": "<p>View to fade out.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "duration",
+            "doc": "<p>Fade duration in milliseconds.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the fadeOut completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-fadeOut",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 165
+          }
+        ],
+        "shortDoc": "Fades out the specified view. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "flash",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Flashes the target view twice, fading to partially transparent then back to\nfully-opaque.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "view",
+            "doc": "<p>View to animate.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "delay",
+            "doc": "<p>If specified, animation starts after <code>delay</code> milliseconds.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the flash completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-flash",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 259
+          }
+        ],
+        "shortDoc": "Flashes the target view twice, fading to partially transparent then back to\nfully-opaque. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "flip",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Transitions from one view to another using a 3D flip animation.\nThe two views need to be positioned on top of each other.\n@platform iphone 1.2.2\n@platform ipad 1.2.2</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "from",
+            "doc": "<p>View to fade out.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Titanium.UI.View",
+            "name": "to",
+            "doc": "<p>View to fade in.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "String",
+            "name": "direction",
+            "doc": "<p>direction ('horizontal' or 'vertical') to flip.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "String"
+          },
+          {
+            "type": "Number",
+            "name": "duration",
+            "doc": "<p>Fade duration in milliseconds.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the fade completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-flip",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 23
+          }
+        ],
+        "shortDoc": "Transitions from one view to another using a 3D flip animation. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "flipHorizontal",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Transitions from one view to another using a horizontal flip animation.\n@platform iphone 1.2.2\n@platform ipad 1.2.2</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "from",
+            "doc": "<p>View to fade out.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Titanium.UI.View",
+            "name": "to",
+            "doc": "<p>View to fade in.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "duration",
+            "doc": "<p>Fade duration in milliseconds.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the fade completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-flipHorizontal",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 66
+          }
+        ],
+        "shortDoc": "Transitions from one view to another using a horizontal flip animation. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "flipVertical",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>@platform iphone 1.2.2\n@platform ipad 1.2.2\nTransitions from one view to another using a vertical flip animation.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "from",
+            "doc": "<p>View to fade out.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Titanium.UI.View",
+            "name": "to",
+            "doc": "<p>View to fade in.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "duration",
+            "doc": "<p>Fade duration in milliseconds.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the fade completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-flipVertical",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 80
+          }
+        ],
+        "shortDoc": "@platform iphone 1.2.2\n@platform ipad 1.2.2\nTransitions from one view to another using a vertical flip animation. ...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "popIn",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Makes the specified view appear using a \"pop-in\" animation, which combines a fade-in\nwith a slight expanding and contracting animation, to call attention to the new view.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "view",
+            "doc": "<p>View to animate.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the popIn completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-popIn",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 190
+          }
+        ],
+        "shortDoc": "Makes the specified view appear using a \"pop-in\" animation, which combines a fade-in\nwith a slight expanding and cont...",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "shake",
+        "owner": "Alloy.builtins.animation",
+        "doc": "<p>Creates a shake animation, moving the target view back and forth rapidly several times.</p>\n",
+        "params": [
+          {
+            "type": "Titanium.UI.View",
+            "name": "view",
+            "doc": "<p>View to animate.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Titanium.UI.View"
+          },
+          {
+            "type": "Number",
+            "name": "delay",
+            "doc": "<p>If specified, animation starts after <code>delay</code> milliseconds.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "Number"
+          },
+          {
+            "type": "function()",
+            "name": "finishCallback",
+            "doc": "<p>Callback function, invoked after the shake completes.</p>\n",
+            "optional": true,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "function()"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-shake",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+            "linenr": 219
+          }
+        ],
+        "shortDoc": "Creates a shake animation, moving the target view back and forth rapidly several times. ...",
+        "html_meta": {
+        }
+      }
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/Alloy/builtins/animation.js",
+      "linenr": 1
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}

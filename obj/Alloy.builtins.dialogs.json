@@ -1,0 +1,251 @@
+{
+  "tagname": "class",
+  "name": "Alloy.builtins.dialogs",
+  "doc": "<p>A collection of utilities for generating dialog boxes.\nTo use the dialogs builtin library,\nrequire it with the <code>alloy</code> root directory in your <code>require</code> call. For example:</p>\n\n<pre><code>var dialogs = require('alloy/dialogs');\ndialogs.confirm({});\n</code></pre>\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "nop",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-Alloy.builtins.dialogs",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+      {
+        "tagname": "property",
+        "name": "buttonNames",
+        "owner": "Alloy.builtins.dialogs",
+        "type": "Array",
+        "doc": "<p>To be used as default buttonNames for confirm-method AlertDialog</p>\n",
+        "default": "[\"No\", \"Yes\"]",
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "property-buttonNames",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/dialogs.js",
+            "linenr": 23
+          }
+        ],
+        "shortDoc": "To be used as default buttonNames for confirm-method AlertDialog ...",
+        "html_type": "Array",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "property",
+        "name": "message",
+        "owner": "Alloy.builtins.dialogs",
+        "type": "String",
+        "doc": "<p>To be used as default message for confirm-method AlertDialog</p>\n",
+        "default": "\"Are you sure?\"",
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "property-message",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/dialogs.js",
+            "linenr": 17
+          }
+        ],
+        "shortDoc": "To be used as default message for confirm-method AlertDialog ...",
+        "html_type": "String",
+        "html_meta": {
+        }
+      },
+      {
+        "tagname": "property",
+        "name": "title",
+        "owner": "Alloy.builtins.dialogs",
+        "type": "String",
+        "doc": "<p>To be used as default title for confirm-method AlertDialog</p>\n",
+        "default": "\"Confirm\"",
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "property-title",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/dialogs.js",
+            "linenr": 11
+          }
+        ],
+        "shortDoc": "To be used as default title for confirm-method AlertDialog ...",
+        "html_type": "String",
+        "html_meta": {
+        }
+      }
+    ],
+    "method": [
+      {
+        "tagname": "method",
+        "name": "confirm",
+        "owner": "Alloy.builtins.dialogs",
+        "doc": "<p>Creates a confirmation dialog box. Default values may be overridden and a callback function\nmay be called after an affirmative response.</p>\n",
+        "params": [
+          {
+            "type": "...*",
+            "name": "args",
+            "doc": "<p>Dialog box parameters.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+              {
+                "tagname": "param",
+                "doc": "<p>Title of the dialog box.</p>\n",
+                "type": "String",
+                "name": "title",
+                "default": "\"Confirm\"",
+                "optional": true,
+                "html_type": "String"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Message of the dialog box.</p>\n",
+                "type": "String",
+                "name": "message",
+                "default": "\"Are you sure?\"",
+                "optional": true,
+                "html_type": "String"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Label of the affirmative button of the dialog box.</p>\n",
+                "type": "String",
+                "name": "yes",
+                "default": "\"Yes\"",
+                "optional": true,
+                "html_type": "String"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Label of the negative button of the dialog box.</p>\n",
+                "type": "String",
+                "name": "no",
+                "default": "\"No\"",
+                "optional": true,
+                "html_type": "String"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Callback function invoked after an affirmative response.</p>\n",
+                "type": "Function",
+                "name": "callback",
+                "optional": true,
+                "html_type": "Function"
+              },
+              {
+                "tagname": "param",
+                "doc": "<p>Callback context.</p>\n",
+                "type": "...*",
+                "name": "evt",
+                "optional": true,
+                "html_type": "...*"
+              }
+            ],
+            "html_type": "...*"
+          }
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+        },
+        "id": "method-confirm",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/Alloy/builtins/dialogs.js",
+            "linenr": 29
+          }
+        ],
+        "shortDoc": "Creates a confirmation dialog box. ...",
+        "html_meta": {
+        }
+      }
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/Alloy/builtins/dialogs.js",
+      "linenr": 1
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}
