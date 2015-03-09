@@ -1,0 +1,129 @@
+{
+  "tagname": "class",
+  "name": "Alloy.Models",
+  "doc": "<p>Class to access or create models.</p>\n\n<p>Models can either be created in markup or programmatically in the controller.</p>\n\n<p>To create models in markup, see the 'Model Element' section in the\n<a href=\"#!/guide/Alloy_XML_Markup\">Alloy XML Markup guide</a>.</p>\n\n<p>In the controller code:</p>\n\n<ul>\n<li> To create a local instance, use the Alloy.createModel method.</li>\n<li> To create a global singleton instance, use the <a href=\"#!/api/Alloy.Models-static-method-instance\" rel=\"Alloy.Models-static-method-instance\" class=\"docClass\">Alloy.Models.instance</a> method.</li>\n</ul>\n\n\n<p>Previously created models through markup or using the <code>instance</code> method\nare directly accessed as properties of the <code><a href=\"#!/api/Alloy.Models\" rel=\"Alloy.Models\" class=\"docClass\">Alloy.Models</a></code> namespace,\nusing either the name of the model JavaScript file for singletons\nor the ID name for local instances.</p>\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "nop",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-Alloy.Models",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+      {
+        "tagname": "method",
+        "name": "instance",
+        "owner": "Alloy.Models",
+        "doc": "<p>Creates a singleton instance of a Model based on the given model, or\nreturns an existing instance if one has already been created.</p>\n",
+        "params": [
+          {
+            "type": "String",
+            "name": "name",
+            "doc": "<p>the name of the base model for the model</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "String"
+          }
+        ],
+        "return": {
+          "type": "Backbone.Model",
+          "name": "return",
+          "doc": "<p>An Alloy Model object singleton</p>\n",
+          "properties": null,
+          "html_type": "Backbone.Model"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+          "static": true
+        },
+        "id": "static-method-instance",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/model.js",
+            "linenr": 21
+          }
+        ],
+        "shortDoc": "Creates a singleton instance of a Model based on the given model, or\nreturns an existing instance if one has already ...",
+        "html_meta": {
+          "static": null
+        }
+      }
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/docs/apidoc/model.js",
+      "linenr": 1
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}

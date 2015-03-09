@@ -31,6 +31,7 @@
 	<type name="Callback" remap="Callback<Dynamic>" />
 	<type name="Function()" remap="Dynamic" />
 	<type name="Function" remap="Dynamic" />
+	<type name="Collection" remap="Dynamic" />
 
 	<output path="extern_classes" />
 </buildhx>

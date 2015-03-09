@@ -1,0 +1,140 @@
+{
+  "tagname": "class",
+  "name": "Alloy.Controller.UI",
+  "doc": "<p>Provides convenience methods for working with Titanium UI objects.</p>\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "nop",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-Alloy.Controller.UI",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+      {
+        "tagname": "method",
+        "name": "create",
+        "owner": "Alloy.Controller.UI",
+        "doc": "<p>Creates a Titanium UI object with the specified styles.</p>\n\n<h4>Example</h4>\n\n<p>The following creates a new View object and assigns the \"dialog\"\nTSS class (defined elsewhere) to the view, and finally adds it to main window.</p>\n\n<pre><code>var view = $.UI.create(\"View\", {\n    classes: 'dialog'\n});\n$.index.add(view);\n</code></pre>\n",
+        "params": [
+          {
+            "type": "String",
+            "name": "apiName",
+            "doc": "<p>Name of the Titanium object to create. This can either be the full class\nname, such as <code>Ti.UI.Button</code>, or the XML element, such as <code>Button</code>.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "String"
+          },
+          {
+            "type": "AlloyStyleDict",
+            "name": "opts",
+            "doc": "<p>Dictionary of styles to apply. <code>opts</code> may also contain any additional properties you would like to apply directly the created Titanium object.</p>\n",
+            "optional": false,
+            "default": null,
+            "properties": [
+
+            ],
+            "html_type": "AlloyStyleDict"
+          }
+        ],
+        "return": {
+          "type": "Titanium.UI.View/Alloy.Controller",
+          "name": "return",
+          "doc": "<p>@since 1.2.0</p>\n",
+          "properties": null,
+          "html_type": "Titanium.UI.View/Alloy.Controller"
+        },
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+          "static": true
+        },
+        "id": "static-method-create",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/controller.js",
+            "linenr": 7
+          }
+        ],
+        "shortDoc": "Creates a Titanium UI object with the specified styles. ...",
+        "html_meta": {
+          "static": null
+        }
+      }
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/docs/apidoc/controller.js",
+      "linenr": 1
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}

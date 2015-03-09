@@ -1,0 +1,163 @@
+{
+  "tagname": "class",
+  "name": "AlloyStyleDict",
+  "doc": "<p>@typestr Object\n@since 1.2.0\n@pseudo\nSimple JavaScript object of properties and TSS classes to apply to a Titanium UI object.</p>\n\n<p>All properties are optional.</p>\n\n<p>The <code>apiName</code> property is only specified with the <code>createStyle</code> method.</p>\n\n<p>In addition to the properties defined below, you can also specify properties related to the\ncomponent.</p>\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "nop",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-AlloyStyleDict",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+      {
+        "tagname": "property",
+        "name": "apiName",
+        "owner": "AlloyStyleDict",
+        "type": "String",
+        "doc": "<p>Name of the Titanium UI object. This can either be the full class name, such as\n<code>Ti.UI.Button</code>, or the XML element, such as <code>Button</code>.</p>\n\n<p>Specified only with createStyle.</p>\n",
+        "default": null,
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+          "static": true
+        },
+        "id": "static-property-apiName",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/controller.js",
+            "linenr": 41
+          }
+        ],
+        "shortDoc": "Name of the Titanium UI object. ...",
+        "html_type": "String",
+        "html_meta": {
+          "static": null
+        }
+      },
+      {
+        "tagname": "property",
+        "name": "classes",
+        "owner": "AlloyStyleDict",
+        "type": "Array<String>",
+        "doc": "<p>Array of TSS classes to apply to the Titanium UI object.</p>\n",
+        "default": null,
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+          "static": true
+        },
+        "id": "static-property-classes",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/controller.js",
+            "linenr": 51
+          }
+        ],
+        "html_type": "Array<String>",
+        "html_meta": {
+          "static": null
+        }
+      },
+      {
+        "tagname": "property",
+        "name": "id",
+        "owner": "AlloyStyleDict",
+        "type": "String",
+        "doc": "<p>TSS ID style to apply to the Titanium UI object.</p>\n",
+        "default": null,
+        "properties": null,
+        "inheritable": false,
+        "inheritdoc": null,
+        "meta": {
+          "static": true
+        },
+        "id": "static-property-id",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/controller.js",
+            "linenr": 58
+          }
+        ],
+        "html_type": "String",
+        "html_meta": {
+          "static": null
+        }
+      }
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/docs/apidoc/controller.js",
+      "linenr": 26
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}

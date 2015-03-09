@@ -1,0 +1,243 @@
+{
+  "tagname": "class",
+  "name": "Alloy.Widget",
+  "doc": "<p>Widgets are self-contained components that can be easily dropped into an Alloy project.\nThey were conceived as a way to reuse code in multiple projects or to be used multiple\ntimes in the same project.</p>\n\n<p>Note that to use the methods list below, the correct namespace is <code>Widget.create*</code> not\n<code>Alloy.Widget.create*</code>.</p>\n\n<p>For more information on widgets, see <a href=\"http://docs.appcelerator.com/titanium/latest/#!/guide/Alloy_Widgets\">Alloy Widgets</a>.</p>\n\n<h4>Creating a Widget</h4>\n\n<p>Widgets are essentially miniature Alloy projects that contain their own models, views, controllers\nand assets.  They are laid out the same way as an Alloy project.</p>\n\n<p>Use <code>Widget.createController()</code>, <code>Widget.createWidget()</code>,  <code>Widget.createModel()</code> and\n<code>Widget.createCollection()</code> rather than the <code>Alloy.create*</code> methods to create\ncomponents relative to the widget context rather than the Alloy project.</p>\n\n<h4>Using a Widget</h4>\n\n<p>To import a widget in to a project:</p>\n\n<ol>\n<li>Copy the widget to the <code>app/widgets</code> folder.  The widget must be contained within its own folder.</li>\n<li>Update the <code>dependencies</code> object in the <code>config.json</code> file by adding a key/value pair with the name of\nthe widget as the key and the version number as the value.</li>\n<li><p>Add the widget to a view or create an instance of the widget in a controller:</p>\n\n<ul>\n<li>To add a widget to a view, add the <Widget> tag in the XML markup and\nset the <code>src</code> attribute to the folder name of the widget.</li>\n<li>To create an instance of a widget in a controller, use the Alloy.createController method.</li>\n</ul>\n</li>\n</ol>\n\n\n<p>You can optionally add the <code>id</code> and <code>name</code> attributes to the <code>Widget</code> element:</p>\n\n<ul>\n<li>The <code>id</code> attribute allows you to reference the widget in the controller code.  You can use this\nreference to call methods exported by the widget.</li>\n<li>The <code>name</code> attribute allows you to import a specific view-controller in the widget rather than the\ndefault one (<code>widget.xml</code>/<code>widget.js</code>).  Specify the name of the view-controller minus the extension.</li>\n</ul>\n\n\n<p>For example, to import a widget called <code>mywidget</code> in to a project, copy <code>mywidget</code> to the\n<code>app/widgets</code> folder, where its assets, controllers, views, etc. are contained in the\n<code>app/widgets/mywidget</code> folder.</p>\n\n<pre><code>app\n├── config.json\n├── controllers\n│   └── index.js\n├── views\n│   └── index.xml\n└── widgets\n    └── mywidget\n        ├── controllers\n        │   ├── foo.js\n        │   └── widget.js\n        ├── views\n        │   ├── foo.xml\n        │   └── widget.xml\n        └── widget.json\n</code></pre>\n\n<p>Next, add it as a dependency in your <code>config.json</code> file:</p>\n\n<pre><code>...\n\"dependencies\":{\n    \"mywidget\":\"1.0\"\n}\n</code></pre>\n\n<p>Finally, either add the widget in the XML markup of the view or create an instance of the widget in the controller.</p>\n\n<p>To add the widget in the view, use the <code>Widget</code> tag, specifying the <code>src</code> attribute as the name of\nthe widget:</p>\n\n<pre><code>&lt;Alloy&gt;\n    &lt;Window id=\"win\"&gt;\n        &lt;Widget id=\"myWidget\" src=\"mywidget\" /&gt;\n    &lt;/Window&gt;\n&lt;/Alloy&gt;\n</code></pre>\n\n<p>Since the <code>id</code> attribute is defined, the widget can be referenced in the controller using\n<code>$.myWidget</code>.</p>\n\n<p>To add the widget in the controller, use the <code>Alloy.createWidget</code> method. The first required parameter is\nthe name of the widget. The second optional parameter can specify the view component to\ninstantiate and the last optional parameter can specify the arguments to instantiate the widget.\nFor example, the following controller code is equivalent to the previous view markup example.</p>\n\n<pre><code>var myWidget = Alloy.createWidget(\"mywidget\");\nwin.add(myWidget.getView());\n</code></pre>\n\n<p>A widget can also be added to other widgets.  Follow the same procedure as above except the widget\nconfiguration file is called <code>widget.json</code> instead of <code>config.json</code>.</p>\n",
+  "extends": null,
+  "mixins": [
+
+  ],
+  "alternateClassNames": [
+
+  ],
+  "aliases": {
+  },
+  "singleton": false,
+  "requires": [
+
+  ],
+  "uses": [
+
+  ],
+  "code_type": "nop",
+  "inheritable": false,
+  "inheritdoc": null,
+  "meta": {
+  },
+  "id": "class-Alloy.Widget",
+  "members": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "statics": {
+    "cfg": [
+
+    ],
+    "property": [
+
+    ],
+    "method": [
+      {
+        "tagname": "method",
+        "name": "createCollection",
+        "owner": "Alloy.Widget",
+        "doc": "<p>@since 1.1.0</p>\n\n<p>@since 1.1.0</p>\n",
+        "params": [
+
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": {
+          "tagname": "inheritdoc",
+          "doc": "@since 1.1.0",
+          "cls": "Alloy",
+          "member": "createCollection"
+        },
+        "meta": {
+          "static": true
+        },
+        "id": "static-method-createCollection",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/widgets.js",
+            "linenr": 100
+          }
+        ],
+        "shortDoc": "@since 1.1.0\n\n@since 1.1.0 ...",
+        "html_meta": {
+          "static": null
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "createController",
+        "owner": "Alloy.Widget",
+        "doc": "<p>@since 1.1.0</p>\n\n<p>@since 1.1.0</p>\n",
+        "params": [
+
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": {
+          "tagname": "inheritdoc",
+          "doc": "@since 1.1.0",
+          "cls": "Alloy",
+          "member": "createController"
+        },
+        "meta": {
+          "static": true
+        },
+        "id": "static-method-createController",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/widgets.js",
+            "linenr": 107
+          }
+        ],
+        "shortDoc": "@since 1.1.0\n\n@since 1.1.0 ...",
+        "html_meta": {
+          "static": null
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "createModel",
+        "owner": "Alloy.Widget",
+        "doc": "<p>@since 1.1.0</p>\n\n<p>@since 1.1.0</p>\n",
+        "params": [
+
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": {
+          "tagname": "inheritdoc",
+          "doc": "@since 1.1.0",
+          "cls": "Alloy",
+          "member": "createModel"
+        },
+        "meta": {
+          "static": true
+        },
+        "id": "static-method-createModel",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/widgets.js",
+            "linenr": 118
+          }
+        ],
+        "shortDoc": "@since 1.1.0\n\n@since 1.1.0 ...",
+        "html_meta": {
+          "static": null
+        }
+      },
+      {
+        "tagname": "method",
+        "name": "createWidget",
+        "owner": "Alloy.Widget",
+        "doc": "<p>@since 1.1.0</p>\n\n<p>@since 1.1.0</p>\n",
+        "params": [
+
+        ],
+        "return": {
+          "type": "undefined",
+          "name": "return",
+          "doc": "\n",
+          "properties": [
+
+          ],
+          "html_type": "undefined"
+        },
+        "inheritable": false,
+        "inheritdoc": {
+          "tagname": "inheritdoc",
+          "doc": "@since 1.1.0",
+          "cls": "Alloy",
+          "member": "createWidget"
+        },
+        "meta": {
+          "static": true
+        },
+        "id": "static-method-createWidget",
+        "files": [
+          {
+            "filename": "/Users/Mo/projects/alloy/docs/apidoc/widgets.js",
+            "linenr": 124
+          }
+        ],
+        "shortDoc": "@since 1.1.0\n\n@since 1.1.0 ...",
+        "html_meta": {
+          "static": null
+        }
+      }
+    ],
+    "event": [
+
+    ],
+    "css_var": [
+
+    ],
+    "css_mixin": [
+
+    ]
+  },
+  "files": [
+    {
+      "filename": "/Users/Mo/projects/alloy/docs/apidoc/widgets.js",
+      "linenr": 1
+    }
+  ],
+  "html_meta": {
+  },
+  "component": false,
+  "superclasses": [
+
+  ],
+  "subclasses": [
+
+  ],
+  "mixedInto": [
+
+  ],
+  "parentMixins": [
+
+  ]
+}
