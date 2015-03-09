@@ -12,7 +12,7 @@ Remember to use JSDuck version `3.10.1` with buildhx if you plan on building thi
 ## Usage
 To install into haxelib, run `haxelib git titanium_mobile_externs https://github.com/momer/haxe_titanium_mobile.git <version> haxelib`
 
-As of this update, the latest [version](https://github.com/momer/haxe_titanium_alloy/releases) is 1.5.1-rc1. (I goofed on the version naming, will fix soon)
+As of this update, the latest [version](https://github.com/momer/haxe_titanium_alloy/releases) is 1.5.1-rc1.
 
 Using the externs is straight forward, here's an example from `test/TestFile.hx`:
 
